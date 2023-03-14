@@ -11,7 +11,7 @@
 
     <script>
 
-        let data = [1,5,6,3,34,55,76,22,14,34]
+        let data = [1,5,6,3,34,55,76,22,14,34,55]
         let searchelement = 55
         let output = 4
         let index = []
@@ -28,6 +28,19 @@
          }
         }
         console.log(index)
+
+
+
+
+        //serach element by default function 
+        console.log(`Search element by default function index of == ${data.indexOf(14)}`)
+        
+
+        //delete element by default function\
+    
+         let itemdelete = data.splice(5,2)
+         console.log(`Delete item default function ${data}`)
+    
          
     </script>
 </body>
