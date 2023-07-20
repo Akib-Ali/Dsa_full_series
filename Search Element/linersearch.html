@@ -11,37 +11,24 @@
 
     <script>
 
-        let data = [1,5,6,3,34,55,76,22,14,34,55]
-        let searchelement = 55
-        let output = 4
-        let index = []
+    let data = [1,3,5,7,9,11,15,11];
+    let searchElemenet = 11;
+    let arr = [] ;
 
+    for(let i = 0; i < data.length; i++){
+        if(data[i] == searchElemenet){
+            arr.push(i)
 
-
-        for(let i =0; i < data.length; i++){
-        
-         if(data[i] === searchelement){
-           // index = i
-           index.push(i)
-        
-
-         }
         }
-        console.log(index)
 
+    }
+    console.log(arr , `find number index`)
 
+    console.log("============= search inbuilt function======================")
 
-
-        //serach element by default function 
-        console.log(`Search element by default function index of == ${data.indexOf(14)}`)
-        
-
-        //delete element by default function\
-    
-         let itemdelete = data.splice(5,2)
-         console.log(`Delete item default function ${data}`)
-    
-         
+    let newdata = [2,4,6,8,10,12,6]
+    let searhdata = newdata.indexOf(8)
+    console.log(searhdata, "search with inbuilt function")         
     </script>
 </body>
 </html>
